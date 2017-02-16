@@ -10,12 +10,13 @@ setInterval(function(){
 }, 5000);
 
 
-
-setInterval(function(){
-    pigeon.style.left = Math.floor((Math.random()*90)+1) + '%';
-    pigeon.style.top = Math.floor((Math.random()*90)+1) + '%';
-}, 1000);
-
-pigeon.addEventListener("click", function(){
-    pigeon.style.display = "none";
-});
+    setInterval(function(){
+        var pigeons = document.getElementsByClassName('pigeon');
+        for(var i = 0; i < pigeon.length; i++){
+            pigeon.style.left = Math.floor((Math.random()*90)+1) + '%';
+            pigeon.style.top = Math.floor((Math.random()*90)+1) + '%';
+        }
+    }, 1000);
+    pigeon.addEventListener("click", function(){
+        pigeon.style.display = "none";
+    });
