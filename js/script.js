@@ -7,16 +7,16 @@ setInterval(function(){
     playFrame.appendChild(pigeon);
     pigeon.style.left = Math.floor((Math.random()*90)+1) + '%';
     pigeon.style.top = Math.floor((Math.random()*90)+1) + '%';
-}, 5000);
+}, 3000);
 
 
     setInterval(function(){
         var pigeons = document.getElementsByClassName('pigeon');
-        for(var i = 0; i < pigeon.length; i++){
-            pigeon.style.left = Math.floor((Math.random()*90)+1) + '%';
-            pigeon.style.top = Math.floor((Math.random()*90)+1) + '%';
+        for(var i = 0; i < pigeons.length; i++){
+            pigeons[i].style.left = Math.floor((Math.random()*90)+1) + '%';
+            pigeons[i].style.top = Math.floor((Math.random()*90)+1) + '%';
+            pigeons[i].addEventListener("click", function(){
+                this.style.display = "none";
+            });
         }
     }, 1000);
-    pigeon.addEventListener("click", function(){
-        pigeon.style.display = "none";
-    });
