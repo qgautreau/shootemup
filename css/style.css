@@ -3,8 +3,10 @@
     height: 98vh;
     width: 98vw;
     cursor:url(../images/viseur.png), pointer;
+    background-image: url(../images/landscape.jpg);
 }
 
-#pigeon {
+.pigeon {
     position: relative;
+    transition: 3s;
 }
