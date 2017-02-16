@@ -2,8 +2,10 @@
     border: 5px solid lightblue;
     height: 98vh;
     width: 98vw;
+    cursor:url(../images/viseur.png), pointer;
 }
 
 #pigeon {
     position: relative;
+    transition: 2s;
 }
