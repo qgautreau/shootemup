@@ -1,10 +1,9 @@
 #playframe {
-    border: 5px solid lightgrey;
+    border: 5px solid lightblue;
     height: 98vh;
     width: 98vw;
 }
 
 #pigeon {
-    
-    visibility: hidden;
+    position: relative;
 }
