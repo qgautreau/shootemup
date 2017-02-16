@@ -7,11 +7,10 @@ playFrame.appendChild(pigeon);
 pigeon.style.left = Math.floor((Math.random()*90)+1) + '%';
 pigeon.style.top = Math.floor((Math.random()*90)+1) + '%';
 
-
-while (true) {
+setInterval(function(){
     pigeon.style.left = Math.floor((Math.random()*90)+1) + '%';
     pigeon.style.top = Math.floor((Math.random()*90)+1) + '%';
-};
+}, 1000);
 
 pigeon.addEventListener("click", function(){
     pigeon.style.display = "none";
