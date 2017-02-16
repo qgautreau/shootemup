@@ -13,8 +13,10 @@ setInterval(function(){
     setInterval(function(){
         var pigeons = document.getElementsByClassName('pigeon');
         for(var i = 0; i < pigeons.length; i++){
-            pigeons[i].style.left = Math.floor((Math.random()*90)+1) + '%';
-            pigeons[i].style.top = Math.floor((Math.random()*90)+1) + '%';
+            pigeons[i].style.left = Math.floor((Math.random()*80)+1) + '%';
+            pigeons[i].style.right = Math.floor((Math.random()*80)+1) + '%';
+            pigeons[i].style.top = Math.floor((Math.random()*80)+1) + '%';
+            pigeons[i].style.bottom = Math.floor((Math.random()*80)+1) + '%';
             pigeons[i].addEventListener("click", function(){
                 this.style.display = "none";
             });
